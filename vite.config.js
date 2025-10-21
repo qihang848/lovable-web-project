@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/lovable-web-project/', // ✅ 填你的 GitHub 仓库名（用于 GitHub Pages）
+  base: './', // ✅ 适配 Cloudflare Pages / GitHub Pages，避免路径解析失败
 });
-
